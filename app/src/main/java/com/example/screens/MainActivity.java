@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Activity2.class);
         intent.putExtra("firstName", "Rutger");
         intent.putExtra("lastName", "Andersson");
-        intent.putExtra("telNumber", 0001234567);
+        intent.putExtra("telNumber", 12345);
         startActivity(intent);
         }
 

@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/secondActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Second Activity"
@@ -17,5 +17,42 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/firstNameID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="#DCDCDC"
+        android:text="FirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondActivity" />
+
+    <TextView
+        android:id="@+id/lastNameID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#DCDCDC"
+        android:text="LastName"
+        app:layout_constraintEnd_toEndOf="@+id/firstNameID"
+        app:layout_constraintStart_toStartOf="@+id/firstNameID"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameID" />
+
+    <TextView
+        android:id="@+id/telNumberID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#DCDCDC"
+        android:text="PhoneNumber"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameID"
+        app:layout_constraintStart_toStartOf="@+id/lastNameID"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameID" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
